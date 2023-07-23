@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Navbar>
+    <Navbar :class="{ 'is-light': color.value === 'light'}">
       <template #end>
         <NavbarItem @click="toggle">
           <o-icon pack="fas" :icon="color.value === 'dark' ? 'moon' : 'sun'" />
